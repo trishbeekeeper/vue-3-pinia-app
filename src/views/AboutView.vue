@@ -1,11 +1,11 @@
 <script lang="ts">
-import {useLoginRequest} from "@/store";
+import {UserStore} from "@/store";
 import {storeToRefs} from "pinia";
 import { ref } from 'vue';
 
 export default {
   setup() {
-    const loginStore = useLoginRequest();
+    const loginStore = UserStore();
     const email = ref('');
     const password = ref('');
     const { getIsLoggedIn } = storeToRefs(loginStore);
@@ -16,7 +16,7 @@ export default {
 
       loginStore.createLogin(email.value, password.value);
     }
-    console.log("in aboutView, isLoggedIn? " + getIsLoggedIn.value);
+    console.log("in aboutVuiewisLoggedIn? " + getIsLoggedIn.value);
     return { email, password, getIsLoggedIn, handleSubmit}
   }
 }
