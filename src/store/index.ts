@@ -156,7 +156,7 @@ export const ApiaryStore = defineStore("apiaryStore", {
                 this.apiaries = response;
                 console.log("in store, response.length: " + response.length);
                 const apiary = response[0];
-                console.log("in store, retrieve apiary?" + apiary.apiaryName);
+                //console.log("in store, retrieve apiary?" + apiary.apiaryName);
             }
         }
     },
