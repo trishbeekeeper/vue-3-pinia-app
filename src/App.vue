@@ -4,7 +4,9 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-  
+<div class="pageHeader"></div>
+<div class="pageHeaderInset"></div>
+
   <header>
 
     <div class="wrapper">
@@ -30,6 +32,16 @@ header {
 .logo {
   display: block;
   margin: 0 auto 2rem;
+}
+.pageHeader {
+  background-color:gold;
+  height: 30px;
+  width: 75%;
+}
+.pageHeaderInset {
+  background-color:darkorange;
+  height: 30px;
+  width:60%;
 }
 
 nav {
