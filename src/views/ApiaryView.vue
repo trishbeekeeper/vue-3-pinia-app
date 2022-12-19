@@ -44,7 +44,7 @@ export default {
       <ApiaryDetails v-for="apiaryResponse in getApiaries" :key="apiaryResponse.apiaryId" :apiaryResponse="apiaryResponse"/>
     </div>
 -->
-
+        <RouterLink to="/newApiary">Create New Apiary</RouterLink>
     <div v-if="getIsApiaryGetted">
         <ul>
             <li class="apiaries" v-for="(apiaryResponse, index) in getApiaries" :key="index">
@@ -59,7 +59,11 @@ export default {
 </template>
 
 <style scoped>
-.apiaries{
-
+.apiaries {
+  padding: 20px;
+  width: 250px;
+  cursor: pointer;
+  border: 1px solid #39495c;
+  margin-bottom: 18px;
 }
 </style>

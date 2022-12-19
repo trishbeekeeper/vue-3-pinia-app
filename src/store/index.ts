@@ -118,6 +118,7 @@ export const ApiaryStore = defineStore("apiaryStore", {
                 this.apiaryName = response.apiaryName;
                 this.apiaryZip = response.apiaryZip;
                 this.isApiaryCreated = true;
+                router.push({name: "apiary"})
             }
 
             return this.isApiaryCreated;
